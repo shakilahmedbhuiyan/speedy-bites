@@ -16,10 +16,10 @@ const navigation = [
 <template>
   <div class="flex justify-center items-center sticky top-0 z-50">
 
-  <Disclosure as="nav" class="w-[calc(100vw-10%)] px-8 bg-gray-200/50 dark:bg-gray-900/50 shadow-lg
+  <Disclosure as="nav" class="w-full px-8 bg-gray-200/50 dark:bg-gray-900/50 shadow-lg
    rounded-xl backdrop-blur border-b border-[rgb(var(--color-primary))] relative"
    v-slot="{ open }">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
 
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
