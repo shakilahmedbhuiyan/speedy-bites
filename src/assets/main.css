@@ -29,6 +29,19 @@
   --color-primary-dark: 22, 163, 74; /* green-600 */
   --color-primary-hover-dark: 34, 197, 94; /* green-500 */
 
+
+  --animate-wiggle: wiggle 3s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+
+    50% {
+      transform: rotate(2deg);
+    }
+  }
+
 }
 
 :root:is(.dark, [data-theme="dark"]) {
@@ -60,6 +73,24 @@
     }
   }
 
+}
+
+.hero-image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image:after {
+  content: "";
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    border-radius: calc(infinity * 1px);
+    z-index: -1;
+    box-shadow: 25px 0px 100px theme('colors.yellow.500'),
+    -20px 0px 100px theme('colors.orange.500');
 }
 
 
