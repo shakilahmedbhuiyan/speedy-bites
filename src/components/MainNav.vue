@@ -17,7 +17,7 @@ const navigation = [
   <div class="flex justify-center items-center sticky top-0 z-50">
 
   <Disclosure as="nav" class="w-[calc(100vw-10%)] px-8 bg-gray-200/50 dark:bg-gray-900/50 shadow-lg
-   rounded-xl backdrop-blur"
+   rounded-xl backdrop-blur border-b border-[rgb(var(--color-primary))] relative"
    v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
@@ -43,10 +43,8 @@ const navigation = [
           <div class="hidden sm:block">
             <div class="flex items-center gap-3">
               <RouterLink v-for="item in navigation" :key="item.name" :to="item.href"
-              :class="[item.current ?
-              'bg-gray-900 text-white dark:bg-gray-500 dark:text-white' :
-               'text-gray-700 dark:text-gray-300 hover:bg-gray-700 hover:text-white',
-              'rounded-md p-3 text-sm font-medium']"
+              activeClass="text-[rgb(var(--color-primary))] border-b-2"
+              class="px-3 text-sm font-medium hover:border-b-2 hover:border-b-amber-500"
               :aria-current="item.current ? 'page' : undefined">{{ item.name }}</RouterLink>
               <DarkModeToggle />
             </div>
@@ -65,8 +63,7 @@ const navigation = [
       <div class="space-y-1 px-2 pt-2 pb-3">
         <RouterLink v-for="item in navigation" :key="item.name" as="a"
         :to="item.href"
-        :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-        'block rounded-md px-3 py-2 text-base font-medium']"
+        class="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white"
         :aria-current="item.current ? 'page' : undefined">{{ item.name }}</RouterLink>
       </div>
     </DisclosurePanel>
