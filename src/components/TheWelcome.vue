@@ -5,10 +5,7 @@
 
 <template>
   <section class="max-w-4xl mx-auto flex justify-center items-center flex-col gap-4 mb-12">
-  <section class="max-w-4xl mx-auto flex justify-center items-center flex-col gap-4 mb-12">
-
-    <div class="flex flex-col justify-center items-center text-center font-serif w-full mt-12">
-      <h1 class="text-4xl mt-8 font-bold text-center text-gray-800 dark:text-amber-100 text-shadow-2xs mx-auto">
+    
     <div class="flex flex-col justify-center items-center text-center font-serif w-full mt-12">
       <h1 class="text-4xl mt-8 font-bold text-center text-gray-800 dark:text-amber-100 text-shadow-2xs mx-auto">
         Kebab | Grill | Pizza | Burger
