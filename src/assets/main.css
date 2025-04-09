@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+/* @import './base.css'; */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Light theme (default) */
+  --color-bg: 255 251 235;
+  --color-text: 17 24 39;
+  --color-primary: 79 70 229;
+
+  /* Dark theme variables */
+  --color-bg-dark: 3 7 18;
+  --color-text-dark: 249 250 251;
+  --color-primary-dark: 165 180 252;
+}
+
+:root:is(.dark, [data-theme="dark"]) {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-primary: var(--color-primary-dark);
+
+}
+
+@layer base {
+
+  body {
+    @apply bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))] transition-colors duration-300;
+  }
+
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  /* padding: 3px; */
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+
