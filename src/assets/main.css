@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
 @import 'tailwindcss';
-/* @import './base.css'; */
+
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @theme {
+
+  /* Font */
+  --font-sans: 'Nunito Sans', sans-serif;
+  --font-serif: 'Poltawski Nowy', serif;
+
   /* Light theme (default) */
   --color-bg: 255 251 235;
   --color-text: 17 24 39;
@@ -25,7 +32,7 @@
 @layer base {
 
   body {
-    @apply bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))] transition-colors duration-300;
+    @apply bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))] font-sans transition-colors duration-300;
   }
 
 }
