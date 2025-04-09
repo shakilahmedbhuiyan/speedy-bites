@@ -1,6 +1,8 @@
 <template>
   <div
-    class="flex flex-col w-full h-fit bg-[#374151] text-[#e5e7eb] px-16 py-14"
+    class="flex flex-col w-full h-fit bg-radial-[at_50%_75%] from-orange-200/30 dark:from-emerald-900/20 to-transparent bg-cover
+    bg-no-repeat bg-center
+    px-16 py-14"
     bis_skin_checked="1"
   >
     <div class="flex md:flex-row flex-col justify-center items-center" bis_skin_checked="1">
@@ -26,7 +28,7 @@
         <!---->
       </div>
 
-      <div class="flex flex-row justify-end gap-16 text-nowrap" bis_skin_checked="1">
+      <div class="flex flex-row justify-end gap-8 sm:gap-16" bis_skin_checked="1">
         <div class="grid grid-cols-3 gap-24" bis_skin_checked="1">
           <div class="flex flex-col gap-2" bis_skin_checked="1">
             <div class="font-bold uppercase text-[#9ca3af] pb-3" bis_skin_checked="1">Explore</div>
