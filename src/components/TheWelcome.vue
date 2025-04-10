@@ -1,11 +1,11 @@
 <script setup>
-
+import Wrap from '@/components/WrapSection.vue';
+const isDev = import.meta.env.DEV;
 
 </script>
 
 <template>
   <section class="max-w-4xl mx-auto flex justify-center items-center flex-col gap-4 mb-12">
-
     <div class="flex flex-col justify-center items-center text-center font-serif w-full mt-10">
       <h1 class="text-4xl mt-8 font-bold text-center text-gray-800 dark:text-amber-100
       drop-shadow-lg mx-auto divide-x divide-gray-300 dark:divide-slate-700">
@@ -21,7 +21,9 @@
     </div>
 
     <div class="hero-image -skew-y-12 skew-x-5">
-      <img src="@/assets/img/2.png" alt="Welcome Image" width="350"
+      <img :src="isDev ? 'src/assets/img/2.png' :
+      '/cdn-cgi/image/width=500,quality=80,quality=80,format=webp,onerror=redirect/src/assets/img/2.png'"
+      alt="Welcome Image" width="350"
       class="h-auto max-w-xl mx-auto drop-shadow-2xl bg-blend-color motion-safe:animate-wiggle" />
     </div>
 
@@ -36,7 +38,6 @@
         </svg>
       </router-link>
     </div>
-
-
-</section>
+  </section>
+  <Wrap />
 </template>

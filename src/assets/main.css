@@ -89,7 +89,26 @@
     width: 300px;
     border-radius: calc(infinity * 1px);
     z-index: -1;
-    box-shadow: 25px 0px 100px theme('colors.yellow.500'),
+    box-shadow: 10px 0px 100px theme('colors.yellow.500'),
+    -10px 0px 100px theme('colors.orange.500');
+}
+
+.wrap-image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-image:after {
+  content: "";
+    position: absolute;
+    @apply rotate-45;
+    height: 250px;
+    width: 140px;
+    border-radius: calc(infinity * 1px);
+    z-index: -1;
+    box-shadow: 50px 0px 100px theme('colors.yellow.500'),
     -20px 0px 100px theme('colors.orange.500');
 }
 

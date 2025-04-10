@@ -4,7 +4,7 @@ import MainFooter from './components/MainFooter.vue'
 import { useHead } from '@unhead/vue'
 
 useHead({
-  title: 'Speedy Bites- Kebab Grill Pizza Burger',
+  title: 'Kebab Grill Pizza Burger',
   titleTemplate: '%s - Speedy Bites',
   htmlAttrs: {
     lang: 'en',

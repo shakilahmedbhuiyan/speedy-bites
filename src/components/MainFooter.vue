@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex flex-col w-full h-fit bg-radial-[at_50%_75%] from-orange-200/30 dark:from-emerald-900/20 to-transparent bg-cover
-    bg-no-repeat bg-center
-    px-16 py-14"
+    class="flex flex-col w-full h-fit rounded-lg bg-radial-[at_50%_95%] from-green-300/30 dark:from-emerald-900/20 from-20%
+    via-transparent to-amber-500/10  dark:to-transparent  bg-cover
+    bg-no-repeat bg-center px-16 py-14 border-t-2 border-amber-500/50"
     bis_skin_checked="1"
   >
     <div class="flex md:flex-row flex-col justify-center items-center" bis_skin_checked="1">
@@ -53,8 +53,8 @@
       </div>
     </div>
     <div class="w-full border-t border-gray-500 my-8" bis_skin_checked="1"></div>
-    <div class="text-center" bis_skin_checked="1">
-      © 2025 {{ $appName }} - All rights reserved.
+    <div class="text-center text-sm" bis_skin_checked="1">
+      ©  {{ new Date().getFullYear()+" "+ $appName }} - All rights reserved.
     </div>
     <!---->
   </div>
